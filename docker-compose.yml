@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+  smokeping:
+    image: lscr.io/linuxserver/smokeping:latest # Wir nutzen das Image von LinuxServer.IO
+    container_name: smokeping
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin # Deine Timezone für Deutschlannd ist es Europe/Berlin.
+    volumes:
+      - /root/smokeping/config:/config
+      - /root/smokeping/data:/data
+      - /root/smokeping/basepage.html:/etc/smokeping/basepage.html # Dies ist für das Custom Design.
+    ports:
+      - 80:80 # Ändere den ersten Port um, wenn du SmokePing auf ein anderen Port haben möchtest.
+    restart: unless-stopped

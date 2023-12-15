@@ -62,7 +62,7 @@ Hier ist ein Screenshot des Dunkelmodus in Aktion:
    apt install git
    git clone https://github.com/maxsrl/SmokePing-Dark.git .
    ```
-4. Bearbeite die "[basepage.html](https://github.com/maxsrl/SmokePing-Dark/blob/main/basepage.html)"-Seite. Ich nutze nur einen Placeholder: "XYZExample".
+4. Bearbeite die "[basepage.html](https://github.com/maxsrl/SmokePing-Dark/blob/main/basepage.html)"-Seite. Ich nutze nur einen Placeholder: "XYZExample" die Bilder haben den Prefix: "https://max.srl/assets/images".
    ```bash
    nano basepage.html
    ```
@@ -92,7 +92,7 @@ Du kannst nun in dein Browser Smomkeping öffnen unter http://deineip/smokeping
       - /root/smokeping/basepage.html:/etc/smokeping/basepage.html # Dies ist für das Custom Design.
    ```
 4. Lade dir die HTML Seite herunter mit z.B. [wGET](https://www.gnu.org/software/wget/) oder [cURL](https://curl.se/)
-5. Bearbeite die "[basepage.html](https://github.com/maxsrl/SmokePing-Dark/blob/main/basepage.html)"-Seite. Ich nutze nur einen Placeholder: "XYZExample".
+5. Bearbeite die "[basepage.html](https://github.com/maxsrl/SmokePing-Dark/blob/main/basepage.html)"-Seite. Ich nutze nur einen Placeholder: "XYZExample" die Bilder haben den Prefix: "https://max.srl/assets/images".
    ```bash
    nano basepage.html
    ```
@@ -103,3 +103,12 @@ Du kannst nun in dein Browser Smomkeping öffnen unter http://deineip/smokeping
    ```
 Du kannst nun in dein Browser Smomkeping öffnen unter http://deineip/smokeping
 </details>
+
+
+### Credits
+
+> [SmokePing](https://oss.oetiker.ch/smokeping/index.en.html)
+>
+> [Docker](https://www.docker.com/)
+>
+> [LinuxServer](https://docs.linuxserver.io/images/docker-smokeping/)

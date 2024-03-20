@@ -10,7 +10,7 @@ Dieses Projekt bietet ein Darkmode-Theme für Smokeping, eine Open-Source-Netzwe
 
 Hier ist ein Screenshot des Dunkelmodus in Aktion:
 
-![Dunkelmodus Screenshot](https://media.m-s.moe/uploads/MaximilianGT500/20bcc3fe-0b42-4807-bc65-1b8b8da246e4.png)
+![Dunkelmodus Screenshot](https://fs.lunoxia.net/uploads/MaximilianGT500/08b61c47-9bc7-4cbe-9509-976fd4de84b4.png)
 
 ## Installation
 ### Neue Installation
@@ -81,7 +81,7 @@ Du kannst nun in dein Browser Smomkeping öffnen unter http://deineip/smokeping
 
 1. Gehe in das Verzeichnis, wo deine bestehende "docker-compose.yml" ist.
    ```bash
-   cd /xyz/xyz
+   cd /xyz
    ```
 2. Öffne die "docker-compose.yml"-Datei in deinem Editor wie z.B. [Nano](https://www.nano-editor.org/).
    ```bash
@@ -92,6 +92,11 @@ Du kannst nun in dein Browser Smomkeping öffnen unter http://deineip/smokeping
       - /root/smokeping/basepage.html:/etc/smokeping/basepage.html # Dies ist für das Custom Design.
    ```
 4. Lade dir die HTML Seite herunter mit z.B. [wGET](https://www.gnu.org/software/wget/) oder [cURL](https://curl.se/)
+   ```yml
+   wget https://raw.githubusercontent.com/maxsrl/SmokePing-Dark/main/basepage.html
+   # bzw.
+   curl https://raw.githubusercontent.com/maxsrl/SmokePing-Dark/main/basepage.html
+   ```
 5. Bearbeite die "[basepage.html](https://github.com/maxsrl/SmokePing-Dark/blob/main/basepage.html)"-Seite. Ich nutze nur einen Placeholder: "XYZExample" die Bilder haben den Prefix: "https://max.srl/assets/images".
    ```bash
    nano basepage.html
